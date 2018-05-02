@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drop Here!</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="./drophere.css">
+</head>
+<body>
+	<article>
+		<section id="dropzone" class="dropzone">
+			<p class="center">Drop here to upload</p>
+		</section>
+		<section>
+			<div class="center">
+				<progress value="0" max="100" id="progressBar"/>
+			</div>
+		</section>
+		<section id="result" class="center">
+		</section>
+		<section class="center">
+			<p>or select file manually:</p>
+			<input type="file" id="manualUpload" label="Select File Manually"/>
+		</section>
+	</article>
+
+	<footer>
+		note: this page does NOT support IE 9.0 or lower. Only single file is supported.
+	</footer>
+
+	<script type="text/javascript" src="./testweb.js"></script>
+</body>
+</html>
