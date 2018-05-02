@@ -9,9 +9,6 @@ HOST = "0.0.0.0"
 PORT = 9000
 
 class CustomServer(http.server.BaseHTTPRequestHandler):
-	def do_HEAD(self):
-		self.sendHeader()
-
 	def do_GET(self):
 		contentType = "text/html"
 		fileName = "." + self.path
